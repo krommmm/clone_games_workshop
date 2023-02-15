@@ -664,6 +664,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    border:0px solid black;
 }
 
 .newsletter .newsletter_container .left .input_container .button:hover {

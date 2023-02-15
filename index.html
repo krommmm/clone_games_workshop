@@ -485,19 +485,18 @@
                <div class="left">
                   <h3>Plus de Warhammer, plus souvent</h3>
                   <div class="input_container">
+                     <form id="email">
                      <div class="gauche">
-                        <input
-                           type="email"
-                           class="email"
-                           placeholder="Adresse e-mail"
-                        />
+                    
+                        <input type="text"  name="email" placeholder="Adresse e-mail"/>
                         <div class="message_erreur_abonnement">
                            <p>Veuillez saisir une adresse e-mail valide</p>
                         </div>
                      </div>
                      <div class="droite">
-                        <div class="button">S'abonner</div>
+                        <button  id="bouton_erreur" class="button" onclick="traitementFormulaireEmail(event)">S'abonner</button>
                      </div>
+                  </form>
                   </div>
                </div>
                <div class="right">
