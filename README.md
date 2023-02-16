@@ -1,0 +1,1 @@
+Clone de la page d'accueil du site https://www.games-workshop.com/fr-FR/D-accueil version desktop tablette et mobile
