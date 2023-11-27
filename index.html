@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <title>clone gamesWorkshoop</title>
+   <link rel="shortcut icon" type="image/png" href="./assets/gw_logo.png" />
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" type="text/css" href="./css/index.css" />
+   <link rel="stylesheet" type="text/css" href="./css/utils.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+   <script src="https://kit.fontawesome.com/65211b898e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <!--MASQUE-->
+   <div class="filter"></div>
+   <div class="console_choix_lang">
+      <div class="livraison">
+         <p>Livrer à :</p>
+         &nbsp;&nbsp;<img src="./assets/fr.svg" />
+      </div>
+      <div class="attention">
+         <i class="fa-solid fa-triangle-exclamation"></i>
+         <p>
+            Attention ! Vous perdrez le contenu de votre panier et de votre
+            liste de cadeaux si vous changez de pays de livraison.
+         </p>
+      </div>
+      <div class="pays">
+         <div class="pays_1">
+            <img src="./assets/australia.svg" />
+            <p>Australia - English</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/belgique-english.svg" />
+            <p>Belgique - English</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/belgique-français.svg" />
+            <p>Belgique - Français</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/canada-english.svg" />
+            <p>Canada - English</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/canada-français.svg" />
+            <p>Canada - Français</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/dennemark-english.svg" />
+            <p>Denmark - English</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/deutschland.svg" />
+            <p>Deutschland - Deutsch</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/espana.svg" />Espana - Espanol
+            <p></p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/finland.svg" />
+            <p>Finland - English</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/fr.svg" />
+            <p>France - Français</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/ireland.svg" />
+            <p>Irland - English</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/italia.svg" />
+            <p>Italia - Italiano</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/japan.svg" />
+            <p>Japan - English</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/netherlands.svg" />
+            <p>NetherLands - English</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/new_zealand.svg" />
+            <p>New Zealand - English</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/norway.svg" />
+            <p>Norway - English</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/poland.svg" />
+            <p>Poland - English</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/ue.svg" />
+            <p>Rest of EU - English</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/world.svg" />
+            <p>Rest of world - English</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/sweden.svg" />
+            <p>Sweden - English</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/uk.svg" />
+            <p>Uk - English</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/us.svg" />
+            <p>US - English</p>
+         </div>
+         <div class="pays_1">
+            <img src="./assets/osterreich.svg" />
+            <p>Österreich - Deutsch</p>
+         </div>
+      </div>
+
+      <div class="croix_lang"><i class="fa-solid fa-x"></i></div>
+   </div>
+   <!--HEADER-->
+   <header>
+      <div class="header_1">
+         <div class="header_1_container">
+            <div class="contact">
+               <a href="#">
+                  <p>Nous Contacter</p>
+               </a>
+            </div>
+            <div class="cadeaux">
+               <a href="#">
+                  <p>Liste de cadeaux</p>
+               </a>
+            </div>
+            <div class="login">
+               <img src="./assets/hache.png" />&nbsp;
+               <a href="#">
+                  <p>S'identifier&nbsp;/&nbsp;S'inscrire</p>
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="header_2">
+         <div class="header_2_container">
+            <div class="logo_container">
+               <img src="./assets/gameWorkshop_logo.png" />
+            </div>
+            <div class="input_container">
+               <input type="text" placeholder="Recherche" autocomplete="off" />
+               <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="lang_container">
+               <p>Livrer à :&nbsp; <img src="./assets/fr.svg" /></p>
+            </div>
+         </div>
+      </div>
+      <div class="header_3">
+         <div class="header_3_container">
+            <div class="WhatsNew image">
+               <a href="#">
+                  <p>Nouveau et en exclusivité</p>
+               </a>
+            </div>
+            <div class="sigmar image">
+               <a href="#"><img src="./assets/logo_warhammer_sigmar.webp" /></a>
+            </div>
+            <div class="40k image">
+               <a href="#"><img src="./assets/logo_40K.webp" /></a>
+            </div>
+            <div class="horus image">
+               <a href="#"><img src="./assets/logo_warhammer_horus.webp" /></a>
+            </div>
+            <div class="lotr image">
+               <a href="#"><img src="./assets/logo_lotr.webp" /></a>
+            </div>
+            <div class="black-library image">
+               <a href="#"><img src="./assets/logo_black_library.webp" /></a>
+            </div>
+            <div class="paint">
+               <a href="#">
+                  <p>Peinture et modélisme</p>
+               </a>
+            </div>
+            <div class="boîte">
+               <a href="#">
+                  <p>Boîtes de jeu</p>
+               </a>
+            </div>
+            <div class="cadeaux">
+               <a href="#">
+                  <p>Cadeaux</p>
+               </a>
+            </div>
+            <div class="community"><a href="#">Warhammer Community</a></div>
+         </div>
+      </div>
+      <!--header pour version desktop et mobile-->
+      <div class="header_2_DM">
+         <div class="header_2_DM_container">
+            <div class="header_2_DM_left">
+               <i class="fa-solid fa-bars"></i>
+               <i class="fa-solid fa-magnifying-glass"></i>
+               <img class="ws" src="./assets/gameWorkshop_logo.png" />
+            </div>
+            <div class="header_2_DM_right">
+               <img class="fr" src="./assets/fr.svg" />
+               <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+         </div>
+         <div class="input_container_2">
+            <input type="text" placeholder="Recherche" autocomplete="off" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+         </div>
+      </div>
+   </header>
+   <!--MAIN-->
+   <main>
+      <!--Presentation visuelle-->
+      <section class="presentation_visuelle">
+         <div class="presentation_visuelle_container">
+            <div class="header_2_DM_depliant">
+               <div class="header_2_DM_depliant_container">
+                  <a href="#">
+                     <div class="element_DM">warhammer</div>
+                  </a>
+                  <a href="#">
+                     <div class="element_DM">warhammer</div>
+                  </a>
+                  <a href="#">
+                     <div class="element_DM">warhammer</div>
+                  </a>
+                  <a href="#">
+                     <div class="element_DM">warhammer</div>
+                  </a>
+                  <a href="#">
+                     <div class="element_DM">warhammer</div>
+                  </a>
+                  <a href="#">
+                     <div class="element_DM">warhammer</div>
+                  </a>
+                  <a href="#">
+                     <div class="element_DM">warhammer</div>
+                  </a>
+                  <a href="#">
+                     <div class="element_DM">warhammer</div>
+                  </a>
+                  <a href="#">
+                     <div class="element_DM">warhammer</div>
+                  </a>
+                  <a href="#">
+                     <div class="element_DM">warhammer</div>
+                  </a>
+                  <a href="#">
+                     <div class="element_DM">warhammer</div>
+                  </a>
+                  <a href="#">
+                     <div class="element_DM">warhammer</div>
+                  </a>
+               </div>
+            </div>
+            <img id="presentation_visuelle_wallpaper" src="./assets/warhammer_wallpaper_3.jpg" />
+            <img id="presentation_visuelle_wallpaper_2" src="./assets/aaa.png" />
+            <img id="logo40k_2" src="./assets/logo_W40k_2.png" />
+            <div class="caption_presentation_visuelle">
+               <img id="logo40k" src="./assets/logo_W40k_2.png" />
+               <h2>L'Atra Militarium est là !</h2>
+               <p>
+                  Commencez ou agrandissez votre force de l'astra militarium
+                  avec ses sorties tonitruantes
+               </p>
+               <p class="bouton_jaune">Commencez votre armée</p>
+            </div>
+         </div>
+      </section>
+      <!--Astramilitarium-->
+      <div class="astra">
+         <div class="astra_container">
+            <h2>L'Astra Militarum est Là !</h2>
+            <p class="premier">
+               Commencez ou agrandissez votre force de l'Astra Militarum avec
+               ces sorties tonitruantes.
+            </p>
+            <p class="bouton_jaune">Commencez votre armée</p>
+         </div>
+      </div>
+      <!--Mosaique_ensemble-->
+      <div class="margin_80">
+         <section class="mosaique_ensemble" data-transition="700">
+            <div class="mosaique_ensemble_container">
+               <div class="ensemble">
+                  <a href="#">
+                     <img src="./assets/figurines/goblins.jpg" />
+                     <div class="caption_ensemble">
+                        <h3>Apportez le chaos dans les royaumes mortels</h3>
+                        <p>
+                           Agrandissez votre amrée des esclaves des ténèbres
+                           avec ces nouvelles sorties
+                        </p>
+                        <p>Voir toute la gamme</p>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="ensemble">
+                  <a href="#">
+                     <img src="./assets/figurines/lizardmen.PNG" />
+                     <div class="caption_ensemble">
+                        <h3>Apportez le chaos dans les royaumes mortels</h3>
+                        <p>
+                           Agrandissez votre amrée des esclaves des ténèbres
+                           avec ces nouvelles sorties
+                        </p>
+                        <p>Explorer</p>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="ensemble">
+                  <a href="#">
+                     <img src="./assets/figurines/dwarf_block.jpg" />
+                     <div class="caption_ensemble">
+                        <h3>Apportez le chaos dans les royaumes mortels</h3>
+                        <p>
+                           Agrandissez votre amrée des esclaves des ténèbres
+                           avec ces nouvelles sorties
+                        </p>
+                        <p>Acheter</p>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="ensemble">
+                  <a href="#">
+                     <img src="./assets/figurines/bretonie_2.JPG" />
+                     <div class="caption_ensemble">
+                        <h3>Apportez le chaos dans les royaumes mortels</h3>
+                        <p>
+                           Agrandissez votre amrée des esclaves des ténèbres
+                           avec ces nouvelles sorties
+                        </p>
+                        <p>Achats</p>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="ensemble">
+                  <a href="#">
+                     <img src="./assets/figurines/fr_fig_1.PNG" />
+                     <div class="caption_ensemble">
+                        <h3>Apportez le chaos dans les royaumes mortels</h3>
+                        <p>
+                           Agrandissez votre amrée des esclaves des ténèbres
+                           avec ces nouvelles sorties
+                        </p>
+                        <p>Acheter</p>
+                     </div>
+                  </a>
+               </div>
+
+               <div class="ensemble">
+                  <a href="#">
+                     <img src="./assets/figurines/lizardmen_5.jpg" />
+                     <div class="caption_ensemble">
+                        <h3>Apportez le chaos dans les royaumes mortels</h3>
+                        <p>
+                           Agrandissez votre amrée des esclaves des ténèbres
+                           avec ces nouvelles sorties
+                        </p>
+                        <p>En savoir plus</p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+            <i id="fleche_gauche" class="fa-solid fa-angle-left"></i>
+            <i id="fleche_droite" class="fa-solid fa-angle-right"></i>
+         </section>
+      </div>
+      <!--Indication principales-->
+      <section class="indications_principales">
+         <div class="indications_principales_container">
+            <div class="indication">
+               <img src="./assets/a1.PNG" />
+               <p>Taxes et droits de douane inclus</p>
+               <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="indication">
+               <img src="./assets/a2.PNG" />
+               <p>Livraison gratuite à partir de 50€</p>
+               <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="indication">
+               <img src="./assets/a3.PNG" />
+               <p>Expédier en magasin</p>
+               <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="indication">
+               <img src="./assets/a4.PNG" />
+               <p>Disponible à la commande</p>
+               <i class="fa-solid fa-arrow-right"></i>
+            </div>
+         </div>
+      </section>
+      <!--Produits phares-->
+      <section class="produits_phares">
+         <div class="title">
+            <h1>Produits phares</h1>
+            <p>Notre sélection du moment</p>
+         </div>
+         <div class="diaporama_produits_phares" data-transition="700">
+            <div class="slides1_produit">
+               <div class="produit">
+                  <img src="./assets/figurines/fond_blanc/12066c3cead7ae69e234f33f1d503975.jpg" />
+                  <div class="caption_produit">
+                     <p>NomUnitée</p>
+                     <p>Acheter</p>
+                  </div>
+               </div>
+               <div class="produit">
+                  <img src="./assets/figurines/fond_blanc/warboss.jpg" />
+                  <div class="caption_produit">
+                     <p>NomUnitée</p>
+                     <p>Acheter</p>
+                  </div>
+               </div>
+               <div class="produit">
+                  <img src="./assets/figurines/fond_blanc/blue_marine.PNG" />
+                  <div class="caption_produit">
+                     <p>NomUnitée</p>
+                     <p>Acheter</p>
+                  </div>
+               </div>
+               <div class="produit">
+                  <img src="./assets/figurines/fond_blanc/ultra_marine.jpg" />
+                  <div class="caption_produit">
+                     <p>NomUnitée</p>
+                     <p>Acheter</p>
+                  </div>
+               </div>
+               <div class="produit">
+                  <img src="./assets/figurines/fond_blanc/c.jpg" />
+                  <div class="caption_produit">
+                     <p>NomUnitée</p>
+                     <p>Acheter</p>
+                  </div>
+               </div>
+               <div class="produit">
+                  <img src="./assets/figurines/fond_blanc/chief_orc.jpg" />
+                  <div class="caption_produit">
+                     <p>NomUnitée</p>
+                     <p>Acheter</p>
+                  </div>
+               </div>
+               <div class="produit">
+                  <img src="./assets/figurines/fond_blanc/a.jpg" />
+                  <div class="caption_produit">
+                     <p>NomUnitée</p>
+                     <p>Acheter</p>
+                  </div>
+               </div>
+               <div class="produit">
+                  <img src="./assets/figurines/fond_blanc/chaos.PNG" />
+                  <div class="caption_produit">
+                     <p>NomUnitée</p>
+                     <p>Acheter</p>
+                  </div>
+               </div>
+               <div class="produit">
+                  <img src="./assets/figurines/fond_blanc/troll_2.jpg" />
+                  <div class="caption_produit">
+                     <p>NomUnitée</p>
+                     <p>Acheter</p>
+                  </div>
+               </div>
+            </div>
+            <i id="fleche_gauche_produit" class="fa-solid fa-angle-left"></i>
+            <i id="fleche_droite_produit" class="fa-solid fa-angle-right"></i>
+         </div>
+      </section>
+      <!--Taxes et douanes-->
+      <section class="taxes_et_douanes">
+         <div class="taxes_et_douanes_container">
+            <img src="./assets/squelette.jpg" />
+            <img src="./assets/squelette_2.jpg" />
+         </div>
+      </section>
+      <!--NewsLetter-->
+      <section class="newsletter">
+         <div class="newsletter_container">
+            <div class="left">
+               <h3>Plus de Warhammer, plus souvent</h3>
+               <div class="input_container">
+                  <form id="email">
+                     <div class="gauche">
+
+                        <input type="text" id="inputEmail" name="email" placeholder="Adresse e-mail" />
+                        <div class="message_erreur_abonnement">
+                           <p>Veuillez saisir une adresse e-mail valide</p>
+                        </div>
+                     </div>
+                     <div class="droite">
+                        <button id="bouton_erreur" class="button"
+                        >S'abonner</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+            <div class="right">
+               <p>
+                  Tout sur les nouveautés, les promotions, les astuces hobby
+                  et plus encore de la part de Games Workshop. Vous pouvez
+                  vous désabonner à tout moment.
+               </p>
+               <p>
+                  En vous abonnant, vous confirmez que vous avez plus de 16
+                  ans ou que vous avez l’accord de vos parents ou de vos
+                  tuteurs.
+               </p>
+               <a href="#">
+                  <p>Avis de confidentialité</p>
+               </a>
+            </div>
+         </div>
+      </section>
+   </main>
+   <!--Footer-->
+   <footer>
+      <div class="indications_all">
+         <div class="indications_all_container">
+            <ul id="container_sous_dossiers">
+               <div class="assistance_container_parent">
+                  <li class="assistance_container">
+                     <div class="li_title">
+                        <h3>Assistance </h3><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i>
+                     </div>
+                  </li>
+                  <li class="sous_ok" id="sous_ok_1">
+
+                     <p class="assistance_1">Trouver votre magasin</p>
+                     <p class="assistance_1">Nous contacter</p>
+                     <p class="assistance_1">Livraisons</p>
+                     <p class="assistance_1">Retours</p>
+                     <p class="assistance_1">FAQ sur les achats</p>
+                  </li>
+               </div>
+               <div class="assistance_container_parent">
+                  <li class="assistance_container">
+                     <div class="li_title">
+                        <h3>Assistance </h3><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i>
+                     </div>
+                  </li>
+                  <li class="sous_ok" id="sous_ok_2">
+
+                     <p class="assistance_1">Trouver votre magasin</p>
+                     <p class="assistance_1">Nous contacter</p>
+                     <p class="assistance_1">Livraisons</p>
+                     <p class="assistance_1">Retours</p>
+                     <p class="assistance_1">FAQ sur les achats</p>
+                  </li>
+               </div>
+               <div class="assistance_container_parent">
+                  <li class="assistance_container">
+                     <div class="li_title">
+                        <h3>Assistance </h3><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i>
+                     </div>
+                  </li>
+                  <li class="sous_ok" id="sous_ok_3">
+
+                     <p class="assistance_1">Trouver votre magasin</p>
+                     <p class="assistance_1">Nous contacter</p>
+                     <p class="assistance_1">Livraisons</p>
+                     <p class="assistance_1">Retours</p>
+                     <p class="assistance_1">FAQ sur les achats</p>
+                  </li>
+               </div>
+               <div class="assistance_container_parent">
+                  <li class="assistance_container">
+                     <div class="li_title">
+                        <h3>Assistance </h3><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i>
+                     </div>
+                  </li>
+                  <li class="sous_ok" id="sous_ok_4">
+
+                     <p class="assistance_1">Trouver votre magasin</p>
+                     <p class="assistance_1">Nous contacter</p>
+                     <p class="assistance_1">Livraisons</p>
+                     <p class="assistance_1">Retours</p>
+                     <p class="assistance_1">FAQ sur les achats</p>
+                  </li>
+               </div>
+
+               <li class="sous_ok" id="sous_ok_5">
+
+                  <p class="assistance_1">Trouver votre magasin</p>
+                  <p class="assistance_1">Nous contacter</p>
+                  <p class="assistance_1">Livraisons</p>
+                  <p class="assistance_1">Retours</p>
+                  <p class="assistance_1">FAQ sur les achats</p>
+               </li>
+
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="copyright">
+         <div class="copyright_container">
+            <p>© Copyright Games Workshop Limited <span class="copyrightYear">annee actuelle</span>.</p>
+            <div class="copyright_container_suite">
+               © Copyright Games Workshop Limited 2023. GW, Games Workshop,
+               Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhammer
+               40,000, the ‘Aquila’ Double-headed Eagle logo, Warhammer Age
+               of Sigmar, Battletome, Stormcast Eternals, and all associated
+               logos, illustrations, images, names, creatures, races,
+               vehicles, locations, weapons, characters, and the distinctive
+               likenesses thereof, are either ® or ™, and/or © Games Workshop
+               Limited, variably registered around the world. All Rights
+               Reserved. © Warner Bros. Entertainment Inc. All rights
+               reserved. THE HOBBIT: AN UNEXPECTED JOURNEY, THE HOBBIT: THE
+               DESOLATION OF SMAUG, THE HOBBIT: THE BATTLE OF THE FIVE ARMIES
+               and the names of the characters, items, events and places
+               therein are trademarks of The Saul Zaentz Company d/b/a
+               Middle-earth Enterprises under license to New Line
+               Productions, Inc. (s23) © 2023 New Line Productions, Inc. All
+               rights reserved. MIDDLE-EARTH, THE LORD OF THE RINGS: THE
+               FELLOWSHIP OF THE RING, THE LORD OF THE RINGS: THE TWO TOWERS,
+               THE LORD OF THE RINGS: THE RETURN OF THE KING and the names of
+               the characters, items, events and places therein are
+               trademarks of The Saul Zaentz Company d/b/a Middle-earth
+               Enterprises under license to New Line Productions, Inc. (s23)
+            </div>
+         </div>
+      </div>
+   </footer>
+<script src="dist/bundle.js"></script>
+</body>
+
+</html>
